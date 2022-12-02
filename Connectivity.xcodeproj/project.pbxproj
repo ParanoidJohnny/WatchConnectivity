@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7CB09600293519FB005C1663 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB095FB293519B1005C1663 /* WatchConnectivity.framework */; };
+		7CB0960129352025005C1663 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99DD22934383E00C397E8 /* Service.swift */; };
 		7CB99DAF2934380C00C397E8 /* ConnectivityApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99DAE2934380C00C397E8 /* ConnectivityApp.swift */; };
 		7CB99DB12934380C00C397E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99DB02934380C00C397E8 /* ContentView.swift */; };
 		7CB99DB32934380D00C397E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99DB22934380D00C397E8 /* Assets.xcassets */; };
@@ -16,6 +18,7 @@
 		7CB99DC32934380D00C397E8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99DC22934380D00C397E8 /* ContentView.swift */; };
 		7CB99DC52934380D00C397E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99DC42934380D00C397E8 /* Assets.xcassets */; };
 		7CB99DC82934380D00C397E8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB99DC72934380D00C397E8 /* Preview Assets.xcassets */; };
+		7CB99DD32934383E00C397E8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB99DD22934383E00C397E8 /* Service.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7CB095FB293519B1005C1663 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS16.1.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
 		7CB99DAB2934380C00C397E8 /* Connectivity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connectivity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB99DAE2934380C00C397E8 /* ConnectivityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectivityApp.swift; sourceTree = "<group>"; };
 		7CB99DB02934380C00C397E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +57,7 @@
 		7CB99DC22934380D00C397E8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CB99DC42934380D00C397E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB99DC72934380D00C397E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CB99DD22934383E00C397E8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CB09600293519FB005C1663 /* WatchConnectivity.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,12 +79,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7CB095FA293519B0005C1663 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7CB095FB293519B1005C1663 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7CB99DA22934380C00C397E8 = {
 			isa = PBXGroup;
 			children = (
+				7CB99DD22934383E00C397E8 /* Service.swift */,
 				7CB99DAD2934380C00C397E8 /* Connectivity */,
 				7CB99DBF2934380D00C397E8 /* Connectivity Watch App */,
 				7CB99DAC2934380C00C397E8 /* Products */,
+				7CB095FA293519B0005C1663 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -233,6 +249,7 @@
 			files = (
 				7CB99DB12934380C00C397E8 /* ContentView.swift in Sources */,
 				7CB99DAF2934380C00C397E8 /* ConnectivityApp.swift in Sources */,
+				7CB99DD32934383E00C397E8 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +259,7 @@
 			files = (
 				7CB99DC32934380D00C397E8 /* ContentView.swift in Sources */,
 				7CB99DC12934380D00C397E8 /* ConnectivityApp.swift in Sources */,
+				7CB0960129352025005C1663 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,7 +408,7 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Debug;
 		};
@@ -420,7 +438,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 9.1;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
 			};
 			name = Release;
 		};
@@ -441,7 +459,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,7 +491,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

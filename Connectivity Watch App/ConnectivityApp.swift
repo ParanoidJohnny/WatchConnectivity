@@ -11,7 +11,9 @@ import SwiftUI
 struct Connectivity_Watch_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView() .onAppear{
+                var model = SyncService()
+            }
         }
     }
 }
